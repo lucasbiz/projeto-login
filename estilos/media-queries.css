@@ -9,3 +9,59 @@ Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
 */
 
+
+@media screen and (min-width:768px) and (max-width: 992px){
+
+    section {
+        flex-direction: row-reverse;
+    }
+    div#formulario{
+        border-radius: 10px 0px 0px 10px;
+    }
+    img{
+        border-radius: 0px 10px 10px 0px;
+        min-width: 300px;
+    }
+    input#log{
+        width: 80%;
+    }
+    
+    input#pas {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+
+    section {
+        flex-direction: column;
+        max-width: 300px;
+        min-width: 250px;
+    }
+
+    img{
+        border-radius: 10px 10px 0px 0px;
+        max-width: 500px;
+    }
+    div#formulario{
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    div#email{
+        min-width: 0px;
+    
+    }
+    
+    div#senha{
+        min-width: 0px;
+    }
+    input#log{
+        width: 80%;
+    }
+    
+    input#pas {
+        width: 80%;
+    }
+
+}
